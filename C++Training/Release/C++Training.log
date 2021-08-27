@@ -1,0 +1,9 @@
+﻿  C++Training.cpp
+  MikaLibrary.cpp
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\MikaLibrary.cpp(14,18): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  2 of 563 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  C++Training.vcxproj -> D:\Users\Mika\Documents\Visual studio c++\C++Training\Release\C++Training.exe
