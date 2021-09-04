@@ -1,0 +1,22 @@
+﻿  C++Training.cpp
+  Class.cpp
+  MikaLibrary.cpp
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\MikaLibrary.cpp(14,18): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  simple_coroutine.cpp
+  The contents of <coroutine> are available only with C++20 or later or /await:strict.
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\simple_coroutine.h(14,26): error C2039: 'coroutine_handle': is not a member of 'std'
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\future(37): message : see declaration of 'std'
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\simple_coroutine.h(23): message : see reference to class template instantiation 'future_awaiter<T>' being compiled
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\simple_coroutine.h(14,1): error C2061: syntax error: identifier 'coroutine_handle'
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\simple_coroutine.h(17,3): error C3861: 'ch': identifier not found
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\simple_coroutine.h(26,13): error C2039: 'coroutine_traits': is not a member of 'std'
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\future(37): message : see declaration of 'std'
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\simple_coroutine.h(26,29): error C3856: 'coroutine_traits': symbol is not a class template
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\simple_coroutine.h(26,42): error C2065: 'T': undeclared identifier
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\simple_coroutine.h(26,35): error C2923: 'std::future': 'T' is not a valid template type argument for parameter '_Ty'
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\simple_coroutine.h(26): message : see declaration of 'T'
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\simple_coroutine.h(26,35): error C2143: syntax error: missing ';' before 'std::future'
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\simple_coroutine.h(26,44): error C2059: syntax error: ','
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\simple_coroutine.h(27,1): error C2143: syntax error: missing ';' before '{'
+D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\simple_coroutine.h(27,1): error C2447: '{': missing function header (old-style formal list?)
+  Generating Code...
