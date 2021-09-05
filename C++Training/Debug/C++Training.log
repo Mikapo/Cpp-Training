@@ -1,5 +1,2 @@
 ﻿  C++Training.cpp
-  MikaLibrary.cpp
-D:\Users\Mika\Documents\Visual studio c++\C++Training\C++Training\MikaLibrary.cpp(17,21): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  Generating Code...
   C++Training.vcxproj -> D:\Users\Mika\Documents\Visual studio c++\C++Training\Debug\C++Training.exe
