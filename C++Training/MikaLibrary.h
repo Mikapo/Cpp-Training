@@ -20,23 +20,25 @@
 
 namespace mikalib
 {
+    // used to test other data structures
     struct test
     {
         test() { m_data = new int[5]; }
         test(const test& other) { m_data = new int[5]; }
-        test(test&& other)
+        test(test&& other) noexcept
         {
             m_data = other.m_data;
             other.m_data = nullptr;
         }
 
-        void operator=(const test& other)
+        ~test() { delete[] m_data; }
+
+        test& operator=(const test& other)
         {
             delete[] m_data;
             m_data = other.m_data;
+            return *this;
         }
-
-        ~test() { delete[] m_data; }
 
     private:
         int* m_data;
@@ -193,7 +195,7 @@ namespace mikalib
             CHECK_FOR_VALID_INDEX(index, m_size);
             return m_data[index];
         }
-        void operator=(const dynamic_array& other)
+        dynamic_array& operator=(const dynamic_array& other)
         {
             delete_memory();
 
@@ -202,8 +204,10 @@ namespace mikalib
             {
                 push_back(other[i]);
             }
+
+            return *this;
         }
-        void operator=(dynamic_array&& other)
+        dynamic_array& operator=(dynamic_array&& other)
         {
             delete_memory();
 
@@ -214,6 +218,8 @@ namespace mikalib
             other.m_data = nullptr;
             other.m_size = 0;
             other.m_capacity = 0;
+
+            return *this;
         }
 
         template <typename... argtypes>
@@ -226,7 +232,7 @@ namespace mikalib
                 emplace(args...);
         }
 
-        // changes size of array
+        // changes capacity of array
         void reserve(size_t size)
         {
             T* new_data = (T*)::operator new(sizeof(T) * size);
@@ -236,7 +242,7 @@ namespace mikalib
                 m_size = size;
 
             for (size_t i = 0; i < m_size; i++)
-                new_data[i] = std::move(m_data[i]);
+                new (&new_data[i]) T(std::move(m_data[i]));
 
             for (size_t i = 0; i < m_size; i++)
                 m_data[i].~T();

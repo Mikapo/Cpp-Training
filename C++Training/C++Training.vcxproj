@@ -156,6 +156,7 @@
     <ClInclude Include="Class.h" />
     <ClInclude Include="MikaLibrary.h" />
     <ClInclude Include="simple_coroutine.h" />
+    <ClInclude Include="Union-Find.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
