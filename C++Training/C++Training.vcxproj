@@ -29,26 +29,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -149,13 +149,29 @@
   <ItemGroup>
     <ClCompile Include="C++Training.cpp" />
     <ClCompile Include="Class.cpp" />
+    <ClCompile Include="Delegate.cpp" />
+    <ClCompile Include="garbage_collector.cpp" />
     <ClCompile Include="MikaLibrary.cpp" />
     <ClCompile Include="simple_coroutine.cpp" />
+    <ClCompile Include="Singleton.cpp" />
+    <ClCompile Include="Sorts.cpp" />
+    <ClCompile Include="TestFunction.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Union-Find.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class.h" />
+    <ClInclude Include="Delegate.h" />
+    <ClInclude Include="FunctionHelpers.h" />
+    <ClInclude Include="garbage_collected_object.h" />
+    <ClInclude Include="garbage_collector.h" />
+    <ClInclude Include="LinkedList.h" />
     <ClInclude Include="MikaLibrary.h" />
     <ClInclude Include="simple_coroutine.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="Sorts.h" />
+    <ClInclude Include="TestFunction.h" />
+    <ClInclude Include="Timer.h" />
     <ClInclude Include="Union-Find.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
